@@ -1,0 +1,4 @@
+Werkzeug
+python-dotenv
+mysql-connector-python
+spyne
