@@ -76,6 +76,132 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "add_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "add_book",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"soap.demo\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <tns:add_book>\n         <title>Domain-Driven Design</title>\n         <author_id>2</author_id>\n         <publication_year>2004</publication_year>\n         <genre>Software Engineering</genre>\n      </tns:add_book>\n   </soapenv:Body>\n</soapenv:Envelope>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "update_book",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"soap.demo\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <tns:update_book>\n         <book_id>16</book_id>\n         <title>Domain-Driven Design Updated</title>\n         <author_id>2</author_id>\n         <publication_year>2004</publication_year>\n         <genre>Software Engineering</genre>\n      </tns:update_book>\n   </soapenv:Body>\n</soapenv:Envelope>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "delete_book",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"soap.demo\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <tns:delete_book>\n         <book_id>16</book_id>\n      </tns:delete_book>\n   </soapenv:Body>\n</soapenv:Envelope>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

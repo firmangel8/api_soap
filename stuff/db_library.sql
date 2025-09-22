@@ -1,4 +1,5 @@
--- MySQL dump 10.13  Distrib 9.3.0, for macos14.7 (x86_64)
+Terminal close -- exit!
+trib 9.3.0, for macos14.7 (x86_64)
 --
 -- Host: localhost    Database: db_library
 -- ------------------------------------------------------

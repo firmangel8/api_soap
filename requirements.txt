@@ -2,3 +2,5 @@ Werkzeug
 python-dotenv
 mysql-connector-python
 spyne
+zeep
+lxml

@@ -7,8 +7,6 @@ Demonstrate how to create simple CRUD API with SOAP, this repository dedicated f
 ## Features
 - Basic CRUD for use case db_library
 
-Please clone this project and make sure to follow all instruction below:
-
 ## Requirements
 - Python 3.7+
 - spyne
